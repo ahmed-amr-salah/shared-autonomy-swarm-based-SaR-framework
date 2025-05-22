@@ -1,0 +1,23 @@
+/**:
+  ros__parameters:
+    # Sensor parameters
+    pso_max_range: 3.5  # Maximum sensor range in meters
+    pso_min_range: 0.1  # Minimum sensor range in meters
+    pso_front_attraction: 0.5  # Forward bias factor
+    
+    # PSO parameters
+    pso_neighborhood_radius: 5.0  # Radius for local best calculation in meters
+    pso_inertia_weight: 0.7  # Inertia weight for velocity update
+    pso_cognitive_weight: 1.5  # Cognitive weight for personal best
+    pso_social_weight: 1.5  # Social weight for local best
+    pso_max_velocity: 0.5  # Maximum velocity in m/s
+    pso_position_publish_rate: 1.0  # Rate to publish position updates in Hz
+    
+    # Grid and target parameters
+    pso_grid_resolution: 0.5  # Grid cell size in meters
+    pso_num_targets: 5  # Number of random targets
+    pso_target_radius: 1.0  # Radius of target areas in meters
+    
+    # Robot motion parameters
+    max_translational_velocity: 0.22  # Maximum linear velocity in m/s
+    max_rotational_velocity: 2.84  # Maximum angular velocity in rad/s 

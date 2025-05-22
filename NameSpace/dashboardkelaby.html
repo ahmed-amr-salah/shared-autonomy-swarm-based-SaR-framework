@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Drone Control UI</title>
+  <style>
+    .arrow {
+      width: 50px;
+      height: 50px;
+      display: inline-block;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>Control the drone:</h2>
+  <p>Click the arrow buttons to move the drone:</p>
+
+  <!-- Four arrow buttons -->
+  <div class="arrows">
+    <button class="arrow" id="w">&#8593;</button><br>
+    <button class="arrow" id="left">&#8592;</button>
+    <button class="arrow" id="right">&#8594;</button><br>
+    <button class="arrow" id="down">&#8595;</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.2/socket.io.js"></script>
+  <script>
+    const HOST_IP = '172.17.0.1'; // Replace with the actual host IP where the server is running
+
+    const socket = io(`http://172.17.0.1:8000/move`);
+    // const moveNamespace = io.of('/move');
+
+    // Get all arrow buttons
+    const arrows = document.querySelectorAll('.arrow');
+
+    // Add click event listeners to each arrow button
+    arrows.forEach((arrow) => {
+      arrow.addEventListener('click', () => {
+        const direction = arrow.id; // Use button id as direction
+        console.log(direction); // Print the direction to the console (for debugging
+        socket.emit('actuateData', direction);
+      });
+    });
+  </script>
+</body>
+</html>

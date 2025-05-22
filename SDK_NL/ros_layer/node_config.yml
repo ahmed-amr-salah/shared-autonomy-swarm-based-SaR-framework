@@ -1,0 +1,16 @@
+ros_node:
+  name: latency_test
+  flow_flag: 0         #(1:Bottom-Up Flow, 0:Top-Down Flow)
+  topics:
+    publish:
+      topic_1:
+        name: "middleware/test"
+        type:  "nav_msgs/Odometry"
+        middleware_flag: 1    
+    subscribe:
+      topic_1:
+        name: "test"
+        type:  "nav_msgs/Odometry"
+        middleware_flag: 1
+      
+

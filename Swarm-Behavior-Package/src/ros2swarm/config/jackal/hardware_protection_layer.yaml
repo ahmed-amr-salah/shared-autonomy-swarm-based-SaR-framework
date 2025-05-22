@@ -1,0 +1,9 @@
+/**:
+  ros__parameters:
+    hardware_protection_layer_max_range: 0.6 # turn radius plus buffer
+    hardware_protection_layer_min_range: 0.4 # 120 mm
+    hardware_protection_layer_front_attraction: 2.0
+    hardware_protection_layer_threshold: 2
+    max_translational_velocity: 0.5 #2.0
+    max_rotational_velocity: 4.0
+    lidar_config: 0.0

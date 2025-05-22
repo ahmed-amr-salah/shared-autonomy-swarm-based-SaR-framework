@@ -1,0 +1,139 @@
+# ROS 2 build directories
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+venv/
+.env/
+pyvenv.cfg
+
+# Node.js
+node_modules/
+package-lock.json
+.npm/
+
+# Documentation
+docs/_build/
+docs/source/_build/
+
+# Docker
+.docker/
+*.env
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ROS 2 specific
+*.db
+*.db-*
+*.log
+*.bag
+*.bag.active
+*.bag.bak
+*.bag.bak.*
+
+# Compiled files
+*.o
+*.os
+*.ko
+*.obj
+*.elf
+*.bin
+*.exe
+*.out
+*.app
+*.i
+*.ii
+*.so
+*.so.*
+*.dylib
+*.dll
+*.class
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
+
+# Colcon
+.colcon_cd_root
+.colcon_install_layout
+
+# Logs
+logs/
+*.log
+
+# Swarm-Behavior-Package specific
+./Swarm-Behavior-Package/build/
+./Swarm-Behavior-Package/install/
+./Swarm-Behavior-Package/log/
+./Swarm-Behavior-Package/.catkin_workspace
+./Swarm-Behavior-Package/.catkin_tools/
+./Swarm-Behavior-Package/.idea/
+./Swarm-Behavior-Package/.vscode/
+./Swarm-Behavior-Package/*.pyc
+./Swarm-Behavior-Package/__pycache__/
+./Swarm-Behavior-Package/*.so
+./Swarm-Behavior-Package/*.o
+./Swarm-Behavior-Package/*.a
+./Swarm-Behavior-Package/*.la
+./Swarm-Behavior-Package/*.lo
+./Swarm-Behavior-Package/*.log
+./Swarm-Behavior-Package/.DS_Store

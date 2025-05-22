@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>my_turtlebot3_simulation</name>
+  <version>0.0.0</version>
+  <description>Simulation for multiple TurtleBots</description>
+  
+  <maintainer email="83145130+michaelreda20@users.noreply.github.com">group05-f24</maintainer>
+  <license>Apache-2.0</license> <!-- Update this to a valid license -->
+
+  <!-- Specific dependencies to avoid redundancy -->
+  <build_export_depend>launch</build_export_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>turtlebot3_gazebo</exec_depend>
+
+  <!-- Test dependencies -->
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
+
